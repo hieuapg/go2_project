@@ -68,3 +68,47 @@ body {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+
+.nav-links a {
+  color: white;                /* Default link color */
+  text-decoration: none;       /* Remove underline */
+}
+
+.nav-links a:visited {
+  color: white;                 /* Keep visited links same color */
+}
+
+.nav-links a:hover {
+  text-decoration: underline;  /* Optional hover effect */
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  border-bottom: 2px solid white; /* Optional active indicator */
+}
+
+.setup-section {
+  text-align: center; /* Center headings and text */
+  margin-top: 2rem;
+}
+
+.setup-description {
+  margin-bottom: 1.5rem;
+}
+
+.setup-section figure {
+  margin: 2rem 0;
+}
+
+.setup-section img {
+  max-width: 70%; /* Adjust as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center image */
+}
+
+.setup-section figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
