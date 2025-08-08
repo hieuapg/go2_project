@@ -9,11 +9,20 @@ body {
   background-color: #fff;
   color: #111;
   line-height: 1.6;
+  padding-top: 70px; /* Push content down so it doesn't hide under navbar */
 }
 
 .navbar {
   background-color: #2f3539;
   padding: 1rem 0;
+
+  /* Make navbar fixed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1000; /* Keep it on top */
 }
 
 .nav-container {
@@ -112,3 +121,9 @@ body {
   color: #555;
   margin-top: 0.5rem;
 }
+
+.robot-img {
+  width: 500px;    /* change to what you want */
+  height: auto;    /* keep aspect ratio */
+}
+
