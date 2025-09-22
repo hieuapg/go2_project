@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient-accompanying Robotic Oxygen Generator Carrier</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/system-overview.html">System Overview</a></li>
+            <li><a href="../pages/related-work.html">Related Work</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <main class="main-content" id="home">
+      <h1>System Overview</h1>
+    <p class="related-work-para">
+      We propose a robotic system that integrates state-of-theart perception, feature fusion, and coordinated control to
+      actively manage oxygen cable slack while accompanying a
+      patient. The envisioned architecture leverages modern
+      quadruped and arm hardware, embedded compute, and recent
+      advances in real-time computer vision:
+      </p>
+    <img src="../images/titlepage.png" class="demo-img">
+    <section class="abstract">
+      <h2>Mobile Platform</h2>
+      <p>
+        The Unitree Go2 quadruped robot is
+        selected as the mobile base for its ability to traverse
+        uneven terrain, step over obstacles, and operate safely
+        in cluttered indoor environments where wheeled robots
+        may struggle. With a weight of approximately 15 kg
+        (including battery) and configurations offering integrated
+        LiDAR (e.g. XT-16) and high AI compute (e.g. 40-100
+        TOPS), Go2 is well-suited for embedded autonomy
+      </p>
+      <img src="../images/go2robott.webp" class="dog-img">
+    </section>
+
+    <section class="abstract" id="people">
+      <h2>Robotic Arm and Gripper</h2>
+      <p>We propose to use the
+          Unitree D1-T 6-DOF arm, which is lightweight ( 2.37
+          kg), has a reach up to 670 mm (including gripper),
+          payload 500 g, and supports position, velocity, and force
+          control modes. Power consumption is 60 W with a 24
+          V supply</p>
+      <img src="../images/d1_arm.jpg" class="arm-img">
+    </section>
+
+    <section class="abstract" id="people">
+      <h2>Perception Suite</h2>
+      <p>To increase the effective field of view,
+          we plan to use a pair of RGB-D cameras mounted
+          with overlapping vertical fields of view. Their outputs
+          will be fused through a computer-vision–based image
+          stitching and depth registration process to generate a combined wide-angle RGB-D stream for improved situational
+          awareness. This fused view, together with a 360° Hesai
+          XT-16 LiDAR, will provide complementary information
+          for patient detection and tracking, cable geometry and
+          dynamics estimation, and environment mapping. We plan
+          to employ YOLOv11 — a recent model from Ultralytics
+          providing state-of-the-art object detection and segmentation — which is capable of running at real-time frame
+          rates on embedded AI platforms such as the NVIDIA
+          Jetson Orin NX</p>
+      <div class="cam-row">
+        <img src="../images/depth_camera.webp" class="cam-img">
+        <img src="../images/go2-wlidar.webp" class="cam-img">
+        <img src="../images/yolohuman.png" class="cam-img">
+      </div>
+    </section>
+  </main>
+</body>
+</html>

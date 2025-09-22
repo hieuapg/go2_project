@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient-accompanying Robotic Oxygen Generator Carrier</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/system-overview.html">System Overview</a></li>
+            <li><a href="../pages/related-work.html">Related Work</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <main class="main-content" id="home">
+    <h1>Related Work</h1>
+    <p class="related-work-para">
+      Research on supporting patients undergoing LTOT spans
+      mobile carriers, tethered follower robots, and rehabilitation-focused mobility aids. Here, we review the most relevant
+      approaches and highlight the gap that motivates our proposed
+      system.
+      </p>
+    <img src="../images/proj-demo.png" class="demo-img">
+    <section class="abstract">
+      <h2>Mobile Robotic Carriers for Oxygen Therapy</h2>
+      <p>
+        Early work emphasized mobile carts or walker-like carriers
+        for transporting oxygen equipment. <a href="https://robomechjournal.springeropen.com/articles/10.1186/s40648-016-0053-3" target="_blank">Iribe et al.</a> developed
+        a robotic cart with a two-DOF handle interface for home
+        use, showing that reducing manual carrying effort encourages
+        patients to walk longer distances. <a href="https://ieeexplore.ieee.org/document/8014140" target="_blank">Kinugasa et al.</a> explored
+        robotic following in public spaces and demonstrated feasibility
+        in outdoor settings. While these solutions reduce the physical
+        burden of carrying oxygen cylinders, they leave the connecting
+        tube unmanaged, exposing patients to potential entanglement
+        and tripping risks.
+      </p>
+    </section>
+
+    <section class="abstract" id="people">
+      <h2>Tethered Follower Robots</h2>
+      <p><a href="https://www.researchgate.net/publication/347341843_A_Control_Strategy_for_a_Tethered_Follower_Robot_for_Pulmonary_Rehabilitation" target="_blank">Bianchi et al.</a> introduced a tethered follower robot for
+          pulmonary rehabilitation that uses a cable tension sensor to
+          follow patients during supervised sessions. <a href="https://eudl.eu/doi/10.4108/icst.pervasivehealth.2012.248596" target="_blank">Ohira et al.</a>
+          proposed a networked shuttle walking model to encourage
+          exercise adherence. These approaches treat the tether primarily
+          as a sensing modality rather than a controllable element.
+          Active cable regulation—maintaining appropriate slack and
+          preventing hazards—remains largely unexplored.</p>
+    </section>
+
+    <section class="abstract" id="people">
+      <h2>Rehabilitation-Oriented Assistive Robotics</h2>
+      <p>Other researchers have investigated robot-assisted gait training and autonomous follower systems for rehabilitation [<a href="https://www.researchgate.net/publication/362512927_Design_of_Autonomous_Following_Vehicle_for_Rehabilitation" target="_blank">link</a>].
+        These platforms typically operate in controlled environments
+        and focus on path following and patient tracking rather than
+        handling a deformable connection such as an oxygen tube.
+        Cable routing, slack regulation, and patient interaction with
+        furniture or cluttered home environments are generally not
+        considered</p>
+    </section>
+
+    <section class="abstract" id="people">
+      <h2>Cable Manipulation and Human-Robot Interaction</h2>
+      <p>Cable and hose manipulation has become an active benchmark problem in robotics, with approaches ranging from
+          reinforcement learning for routing and knot tying [<a href="https://doi.org/10.1186/s40648-016-0054-6" target="_blank">link</a>], [<a href="https://doi.org/10.1186/s40648-016-0054-6" target="_blank">link</a>] to
+          vision-based threading [<a href="https://arxiv.org/abs/1910.13439" target="_blank">link</a>] and planning-based methods for
+          constrained routing [<a href="https://doi.org/10.1186/s40648-016-0054-6" target="_blank">link</a>]. Other studies leverage simulationto-real transfer for tasks like insertion and untangling [18].
+          However, most methods assume static endpoints or fully
+          known workspaces, and few involve a human actively moving
+          one end of the cable. These methods are optimized for
+          task completion rather than continuous slack management in
+          dynamic scenarios.</p>
+    </section>
+
+    <section class="abstract" id="people">
+      <h2>Motivation and Gap</h2>
+      <p>From the literature, three key gaps remain: (1) oxygen
+        tube slack is rarely treated as a controllable variable, (2) few
+        systems integrate multi-modal perception (vision + LiDAR)
+        for robust tracking in unstructured home-like spaces, and
+        (3) predictive adjustment of cable slack to anticipate human
+        motion has not been studied. Our proposed system aims to address these gaps by combining wide-field RGB-D perception,
+        real-time patient tracking, obstacle-aware cable routing, and
+        predictive slack regulation using a mobile quadruped platform
+        equipped with a hook-shaped gripper.</p>
+    </section>
+  </main>
+</body>
+</html>

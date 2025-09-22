@@ -4,31 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Patient-accompanying Robotic Oxygen Generator Carrier</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
   <nav class="navbar">
     <div class="nav-container">
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/setup.html">Setup</a></li>
-        <li><a href="pages/cable_manipulation.html">Cable Manipulation</a></li>
-        <li><a href="pages/robot_navigation.html">Robot Navigation</a></li>
-        <li><a href="pages/patient_accompany.html">Patient Accompany</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/system-overview.html">System Overview</a></li>
+        <li><a href="../pages/related-work.html">Related Work</a></li>
       </ul>
     </div>
   </nav>
 
   <main class="main-content" id="home">
-    <h1>Patient-accompanying Robotic Oxygen Generator Carrier</h1>
-    <img src="images/template.png" alt="Neonatal Pain Assessment Diagram" class="diagram" />
+    <h1>Robotic Assistant for Safe Patient Mobility Through Oxygen Cable Management</h1>
+    <img src="images/proj-demo.png" class="title-img" />
 
     <section class="abstract">
       <h2>Abstract</h2>
       <p>
-        Elderly patients who require supplemental oxygen rely on bulky oxygen generator systems, which significantly hinder their mobility and independence within indoor environments. The burden of manually transporting these devices reduce activity levels, lower quality of life, and pose a risk of serious injuries. The main objective of this project is to design and develop a robotic oxygen generator carrier that autonomously accompanies patients, enabling seamless and safe navigation. This system aims to provide continuous mobility assistance through affordable, safe, and easily operate robotic technology. By reducing the physical demands on patients and promoting independence, the carrier has the potential to improve long-term health outcomes, reduce the risk of falls or injuries, and alleviate the burden on caregivers.
-        <br>While additional developments and testings are needed, preliminary work indicates that robotic assistance for oxygen delivery is both feasible and impactful in enhancing elderly patients care.
-        <!-- Add full abstract text here -->
+        Long-term oxygen therapy (LTOT) patients often
+        rely on portable tanks connected via nasal cannulae or tubing,
+        which introduces mobility constraints and tripping hazards. We
+        present a mobile robotic system that actively regulates oxygen
+        cable slack while following the patient, improving safety during
+        daily activities. The system combines a Unitree Go2 quadruped, a
+        lightweight 6-DoF arm with a hook-shaped gripper, dual Intel RealSense D435 cameras with vertical image stitching for wide-field
+        RGB-D perception, YOLO-Pose for patient localization, and a
+        Hesai XT-16 LiDAR for obstacle detection. A predictive controller
+        is proposed to anticipate patient transitions (sit–stand–walk) and
+        reduce tension spikes by dynamically routing the cable. We plan
+        to evaluate the system in a clinical-like environment to assess
+        its ability to maintain safe slack, avoid obstacles, and follow
+        patient motion. This work aims to demonstrate the feasibility
+        of deploying perception-driven, predictive cable management for
+        LTOT patients in hospital or home settings.
       </p>
     </section>
 
